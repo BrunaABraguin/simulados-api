@@ -1,0 +1,29 @@
+{
+  "name": "simulados-api",
+  "version": "1.0.0",
+  "description": "- API para solução de simulados para o [@tonaaulasp](https://www.instagram.com/tonaaulasp/)\r - É parte do Projeto Integrador II da Univesp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunaABraguin/simulados-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunaABraguin/simulados-api/issues"
+  },
+  "homepage": "https://github.com/BrunaABraguin/simulados-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

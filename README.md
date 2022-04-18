@@ -26,7 +26,9 @@ cd pastadorepositorio
 
 # Instale as dependências
 npm install
+
 # Rode a aplicação
+npm run dev
 
 # Acesse http://localhost:3000 no seu navegador.
 ```
