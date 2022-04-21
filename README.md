@@ -15,7 +15,7 @@
 - [NPM](https://www.npmjs.com/)
 
 ### Opcional
-- [VSCode](https://code.visualstudio.com/) utilizando [GitHub Copilot](https://copilot.github.com/)]
+- [VSCode](https://code.visualstudio.com/) utilizando [GitHub Copilot](https://copilot.github.com/)
 - [MongoDB Compass](https://www.mongodb.com/pt-br/products/compass) - Pode ser instalado com o MongoDB
 
 ### Pacotes do projeto
@@ -49,3 +49,27 @@ npm run dev
 
 <br>
 
+## Métodos
+
+| Método | Descrição |
+|---|---|
+| `POST` em http://localhost:3000/api/v1/question | Cria uma questão para ser utilizado no simulado. |
+| `POST` em http://localhost:3000/api/v1/test | Cria um simulado. |
+
+## Exemplos de requisição (application\json)
+
+```bash
+{
+    "question": "No contexto dos objetivos e principais conceitos da área de engenharia de software, marque a alternativa que apresenta uma questão básica apresentada na videoaula sobre introdução à engenharia de software:",
+    "answer": "Principais desafios enfrentados pela engenharia de software.",
+    "options":
+    [
+        "Diferenças que os celulares (smartphones) trouxeram para a engenharia de software.",
+        "Lista completa de todas as atividades da engenharia de software.",
+        "Diferença entre engenharia de software e engenharia de produção.",
+        "Atributos do software eficiente."
+    ],
+    "category": "Engenharia de Software",
+    "subcategory": "Introdução à Engenharia de Software"
+}
+```
