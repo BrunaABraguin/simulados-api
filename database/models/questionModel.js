@@ -3,26 +3,26 @@ const questionSchema = new mongoose.Schema(
   {
     question: {
       type: String,
-      required: true,
+      required: true
     },
     answer: {
       type: String,
-      required: true,
+      required: true
     },
     options: {
       type: Array,
-      required: true,
+      required: true
     },
     comment: {
       type: String,
     },
     category: {
       type: String,
-      required: true,
+      required: true
     },
     subcategory: {
       type: String,
-      required: true,
+      required: true
     },
   },
   {

@@ -3,24 +3,24 @@ const testSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     description: {
       type: String,
-      required: true,
+      required: true
     },
     questions: {
       type: Array,
-      required: true,
+      required: true
     },
     category: {
       type: String,
-      required: true,
+      required: true
     },
     timer: {
-        type: Number,
-        required: true,
-    }
+      type: Number,
+      required: true
+    },
   },
   {
     timestamps: true,
@@ -29,8 +29,8 @@ const testSchema = new mongoose.Schema(
         ret.id = ret._id;
         delete ret._id;
         delete ret.__v;
-      }
-    }
+      },
+    },
   }
 );
 
