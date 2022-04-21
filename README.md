@@ -56,8 +56,24 @@ npm run dev
 | `POST` em http://localhost:3000/api/v1/question | Cria uma questão para ser utilizado no simulado. |
 | `POST` em http://localhost:3000/api/v1/test | Cria um simulado. |
 
+
+<br>
+
 ## Exemplos de requisição (application\json)
 
+<br>
+
+### Questões [/question]
+
+- question: { type: String, required: true}
+- answer: { type: String, required: true}
+- options: { type: String, required: true}
+ - comment: { type: String, required: false}
+ - category: { type: String, required: true}
+ - subcategory: { type: String, required: true}
+
+<br>
+ 
 ```bash
 {
     "question": "No contexto dos objetivos e principais conceitos da área de engenharia de software, marque a alternativa que apresenta uma questão básica apresentada na videoaula sobre introdução à engenharia de software:",
@@ -69,6 +85,7 @@ npm run dev
         "Diferença entre engenharia de software e engenharia de produção.",
         "Atributos do software eficiente."
     ],
+    "comments": "Os principais desafios enfrentados pela engenharia de software são 'lidar com a crescente diversidade, com as demandas por menores prazos de entrega e desenvolver software confiável.'",
     "category": "Engenharia de Software",
     "subcategory": "Introdução à Engenharia de Software"
 }
